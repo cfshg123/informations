@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>
+    <h3>关于用 vue-cli  生成一个项目的问题</h3>
+    <h4 style="margin-top: 10px">步骤：</h4>
+     1. 全局安装 webpack   ==> npm install webpack -g <br>
+     2. 安装 node                                          运行 node -v  查看版本 <br>
+     3. 全局安装 vue-cli       ==> npm install vue-cli -g     vue -V （此处是大写的 V） 查看是否成功 <br>
+        =====  如果已经存在全局的webpack  就不需要执行以上的操作  ======  <br>
+     4. 生成项目                  ==> vue init webpack project_name <br>
+     5.  回车 <br>
+	 Project name ?输入项目名称 <br>
+	 Project description 输入项目描述 <br>
+	 Author 作者 <br>
+	 Vue build 打包方式，回车就好了 <br>
+	 Install vue-router? ?选择 ?Y 使用 vue-router，输入 N 不使用 <br>
+	 Use ESLint to lint your code? 代码规范，推荐 N <br>  
+   如果不小心写成 y  可以修改  build\webpack.base.conf.js这个文件  中的 module 下的 rules 下的 （config.dev.useEslint ? [ ] : [ ]）<br>
+	 Setup unit tests with Karma + Mocha? 单元测试，推荐 N<br>
+	 Setup e2e tests with Nightwatch? E2E测试，N<br>
+     6. 进入自己那个项目中  npm run dev    == > 就可以跑起来了  但是也有可能会报错 <br>
+	如: <br>
+    （1.）如果 有  'webpack-dev-server' 执行命令 npm install webpack-dev-server -g 就可以解决 再次执行 npm run dev 就可以跑起来
+  </p>
+</body>
+</html>
